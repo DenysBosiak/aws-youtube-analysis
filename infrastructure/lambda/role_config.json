@@ -1,0 +1,13 @@
+{
+    "role_name": "active-s3-role-lif0542p",
+    "AttachedPolicies": [
+        {
+            "PolicyName": "AWSLambdaBasicExecutionRole-602f4432-75d6-4f09-afcc-2bf841f3641f",
+            "PolicyArn": "arn:aws:iam::992382547485:policy/service-role/AWSLambdaBasicExecutionRole-602f4432-75d6-4f09-afcc-2bf841f3641f"
+        },
+        {
+            "PolicyName": "AmazonS3ExpressFullAccess",
+            "PolicyArn": "arn:aws:iam::aws:policy/AmazonS3ExpressFullAccess"
+        }
+    ]
+}

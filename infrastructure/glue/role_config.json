@@ -1,0 +1,13 @@
+{
+    "role_name": "glue-s3-worker",
+    "AttachedPolicies": [
+        {
+            "PolicyName": "CloudWatchFullAccess",
+            "PolicyArn": "arn:aws:iam::aws:policy/CloudWatchFullAccess"
+        },
+        {
+            "PolicyName": "AmazonS3FullAccess",
+            "PolicyArn": "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+        }
+    ]
+}
