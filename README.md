@@ -11,7 +11,7 @@ CSV file → S3 (raw/) → Lambda → Glue → EventBridge → SNS
 | Step | Service | What it does |
 |---|---|---|
 | 1 | S3 | Receives raw CSV files in the `raw/` prefix |
-| 2 | Lambda (`active-s3`) | Triggered on S3 `ObjectCreated:Put`, starts the Glue job |
+| 2 | Lambda (`active-s3`) | Triggered on S3 `ObjectCreated:*`, starts the Glue job |
 | 3 | Glue (`s3_csv_change_schema`) | Reads CSV, applies schema mapping, writes Parquet to `bronze/` |
 | 4 | EventBridge (`glue-finished`) | Listens for Glue job `SUCCEEDED` or `FAILED` state changes |
 | 5 | SNS (`s3-notification`) | Sends notification when the pipeline finishes |
