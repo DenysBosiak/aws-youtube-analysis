@@ -1,0 +1,9 @@
+{
+    "region": "eu-north-1",
+    "account_id": "992382547485",
+    "s3_bucket": "aws-developing-youtube-analysis",
+    "lambda_function": "active-s3",
+    "glue_job": "s3_csv_change_schema",
+    "eventbridge_rule": "glue-finished",
+    "sns_topic_arn": "arn:aws:sns:eu-north-1:992382547485:s3-notification"    
+}
