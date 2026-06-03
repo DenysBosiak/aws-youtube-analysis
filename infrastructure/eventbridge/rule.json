@@ -1,0 +1,20 @@
+{
+    "rule": {
+        "Name": "glue-finished",
+        "Arn": "arn:aws:events:eu-north-1:992382547485:rule/glue-finished",
+        "EventPattern": "{\"source\":[\"aws.glue\"],\"detail-type\":[\"Glue Job State Change\"]}",
+        "State": "ENABLED",
+        "Description": "",
+        "EventBusName": "default",
+        "CreatedBy": "992382547485"
+    },
+    "targets": {
+        "Targets": [
+            {
+                "Id": "Idc74d2e92-9438-472e-975a-d8f92789d821",
+                "Arn": "arn:aws:sns:eu-north-1:992382547485:s3-notification",
+                "RoleArn": "arn:aws:iam::992382547485:role/service-role/Amazon_EventBridge_Invoke_Sns_For_Glue_Works"
+            }
+        ]        
+    }
+}
