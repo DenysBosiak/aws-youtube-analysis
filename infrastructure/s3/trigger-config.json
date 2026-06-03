@@ -1,0 +1,26 @@
+{
+    "LambdaFunctionConfigurations": [
+        {
+            "Id": "a074a13a-7d71-4440-9baf-d999246d93f4",
+            "LambdaFunctionArn": "arn:aws:lambda:eu-north-1:992382547485:function:active-s3",
+            "Events": [
+                "s3:ObjectCreated:*"
+            ],
+            "Filter": {
+                "Key": {
+                    "FilterRules": [
+                        {
+                            "Name": "Prefix",
+                            "Value": "raw/"
+                        },
+                        {
+                            "Name": "Suffix",
+                            "Value": ".csv"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "EventBridgeConfiguration": {}
+}
