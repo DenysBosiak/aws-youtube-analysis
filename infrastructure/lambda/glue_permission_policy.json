@@ -1,0 +1,15 @@
+{
+    "RoleName": "active-s3-role-pbsuvsjs",
+    "PolicyName": "LambdaRunGlueJob",
+    "PolicyDocument": {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Sid": "VisualEditor0",
+                "Effect": "Allow",
+                "Action": "glue:StartJobRun",
+                "Resource": "arn:aws:glue:eu-north-1:992382547485:job/s3_csv_change_schema"
+            }
+        ]
+    }
+}

@@ -9,7 +9,7 @@ def lambda_handler(event, context):
 
     try:
         response = client.start_job_run(
-            JobName='s3_csv_change_scema'
+            JobName='s3_csv_change_schema'
         )
         logger.info(f"Glue job started: {response['JobRunId']}")
         return {
